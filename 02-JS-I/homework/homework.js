@@ -28,39 +28,63 @@ const nuevoModulo = 21 % 5 === 1;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-  
-}
+ str = Mati;
+   return devolverString;
+
+} 
 
 function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
-  
+  suma=(x+y);
+   x=3
+   y=1
+  return suma;
+
 }
 
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  
+  resta =(x-y);
+ x=5
+ y=2
+  return resta;
+
 }
 
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
-  
+  multiplica =(x*y);
+  x=3
+  y=8
+  return multiplica;
+
 }
 
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
-  
+  divide =(x/y)
+  x=100
+  y=5
+  return divide;
+
 }
 
 function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  x=5
+  y=3
+  if (x===y) 
+  return true;
+  else (x!==y)
+  return false;
+
 }
 
 function tienenMismaLongitud(str1, str2) {
@@ -74,7 +98,11 @@ function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  menosQueNoventa = 90
+  if (menosQueNoventa < 90)
+  return true;
+  else (menosQueNoventa >90)
+  return false;
 }
 
 function mayorQueCincuenta(num) {
