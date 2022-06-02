@@ -28,8 +28,8 @@ const nuevoModulo = 21 % 5 === 1;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
- str = "Mati";
-   return devolverString;
+ 
+  return str;
 
 } 
 
@@ -126,7 +126,7 @@ function esPar(num) {
   
   if (num % 2 === 0) {
     return true
-  }
+  } return false;
 
 }
 
@@ -136,14 +136,15 @@ function esImpar(num) {
   // Tu código:
   if (num % 2 === 1) {
     return true
-  }
+  } return false;
 }
 
 function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  return math.pow (num, 2);
+
+  return Math.pow (num, 2);
 }
 
 function elevarAlCubo(num) {
@@ -155,19 +156,19 @@ function elevarAlCubo(num) {
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  return math.pow (num, exponent);
+  return Math.pow (num, exponent);
 }
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  return math.round (num);
+  return Math.round (num);
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  return math.ceil (num);
+  return Math.ceil (num);
 }
 
 function numeroRandom() {
@@ -184,12 +185,12 @@ function esPositivo(numero) {
   //Si el número es 0, devuelve false
   
   if (numero < 0) {
-    return "Es Negativo";
+    return "Es negativo";
   }
   else if (numero === 0) {
-    return "False";
+    return false;
   }
-  else return "Es Positivo";
+  else return "Es positivo";
 }
 
 function agregarSimboloExclamacion(str) {
@@ -204,7 +205,7 @@ function combinarNombres(nombre, apellido) {
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
   //return nombre + apellido;
-  var identidad = ( nombre + apellido);
+  var identidad = ( nombre + " " + apellido);
   return identidad;
 }
 
@@ -214,7 +215,7 @@ function obtenerSaludo(nombre) {
   // Tu código:
   // var bienvendia = ("Hola ""+ nombre + "!")
   // retunr bienvenida;
-  return "Hola" + "" + nombre + "!";
+  return "Hola" + " " + nombre + "!";
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -246,7 +247,7 @@ function deEuroAdolar(euro){
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
   var divisa = (euro *1.20)
-  return "Su cambio en dolares es " + divisa 
+  return divisa 
 }
 
 
@@ -257,10 +258,10 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
   if (letra.length > 1) {
-    return "Dato inconrrecto";
+    return "Dato incorrecto";
   }
     else if (letra === "a" || letra === "e" || letra ==="i" || letra === "o" || letra === "u") {
-      return "Es Vocal"
+      return "Es vocal"
     }
   return "Dato incorrecto"
 }
