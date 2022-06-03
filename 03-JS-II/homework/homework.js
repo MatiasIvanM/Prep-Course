@@ -42,11 +42,11 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
-  if (idioma === mandarin){
+  if (idioma === "mandarin"){
     return "Ni Hao!";
-  }else if (idioma === aleman){
+  }else if (idioma === "aleman"){
     return "Guten Tag!";
-  } else if (idioma === ingles) {
+  } else if (idioma === "ingles") {
     return "Hello!";
   } else return "Hola!";
 
@@ -182,7 +182,7 @@ return true;
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
-
+  
 if (valor === true){
   return "Soy verdadero";
 }else return "Soy falso";
@@ -216,6 +216,16 @@ function doWhile (numero) {
   //Retornar el valor final.
   //Usar el bucle do ... while.
   
+  let a = numero
+  let n = 0
+  do {
+    n = n ++;
+    a =  + 5;
+  } while (n < 8);
+  return numero;
+
+  // uso el 41 porque se que mi valor final sera 40, en caso contrio debo darle un valor de variable asiganda previamente o en su lugar un tope 
+  // es decir un comparador que de como resultado false para poder frenar la funcion y que no sea infinita.
 
 }
 
