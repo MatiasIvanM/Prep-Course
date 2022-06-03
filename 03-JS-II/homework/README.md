@@ -4,8 +4,8 @@
 ---
 1. En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
 
-* `for`
-* `&&`, `||`, `!`
+* `for` funccino de bucle, expresion en readme de js 2 
+* `&&` asigancion de Y, (estoy Y esto), `||` asignacion de O (esto O esto), `!` asigancion de NOT (devuelve un valor opuesto al si es falso devuelve verdadero y viceversa)
 
 2. Desde la carpeta `Prep` en la carpeta donde clonaste el repo, ingresa el comando `npm test JSII.test.js` para correr los tests automatizados. Al principio, todos los tests estarán fallados/rotos. Encontrarás las funciones para hacer pasar los tests en el archivo `homework.js`.
 
