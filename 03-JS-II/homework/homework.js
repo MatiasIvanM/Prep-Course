@@ -152,12 +152,12 @@ if (num1 < 0 || num2 < 0 || num3 < 0){
 else if ( num1 === 0 || num2 === 0 || num3 === 0){
   return "Error";
 }
-else if (num1 > num2 && num2 > num3 && num1 > 0){
+else if (num1 > num2 && num1 > num3){
   return "Número 1 es mayor y positivo";
 }
   else if ( num3 > num1 && num3 > num2){
-    return false;
-  }
+    return num3 +1;
+  } return false;
 }
 
 function esPrimo(numero) {
@@ -169,13 +169,16 @@ function esPrimo(numero) {
 
 if (numero < 2) return false;
 if (numero === 2) return true;
-for (var i = 2; 1 < numero; i++ ) {
-if (numero % i === 0){
+
+for (var i = 2; i < numero; i++ ) {
+ if (numero % i === 0){
   return false;
+ }
 }
+
 return true;
-}
-}
+  }
+
 
 
   function esVerdadero(valor){
@@ -185,7 +188,7 @@ return true;
   
 if (valor === true){
   return "Soy verdadero";
-}else return "Soy falso";
+} return "Soy falso";
 }
 
 function tablaDelSeis(){
@@ -216,16 +219,28 @@ function doWhile (numero) {
   //Retornar el valor final.
   //Usar el bucle do ... while.
   
-  let a = numero
-  let n = 0
-  do {
-    n = n ++;
-    a =  + 5;
-  } while (n < 8);
-  return numero;
 
-  // uso el 41 porque se que mi valor final sera 40, en caso contrio debo darle un valor de variable asiganda previamente o en su lugar un tope 
-  // es decir un comparador que de como resultado false para poder frenar la funcion y que no sea infinita.
+var resutl = numero;
+ var contador = 0;
+ do {
+  resutl = resutl + 5;
+    contador +=1;
+    
+  } while (contador < 8);
+  return resutl;
+
+
+  /*let result = '';
+let i = 0;
+
+do {
+  i = i + 1;
+  result = result + i;
+} while (i < 5);
+
+console.log(result);*/
+// expected result: "12345"
+
 
 }
 
